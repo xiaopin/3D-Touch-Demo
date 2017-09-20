@@ -50,6 +50,75 @@
             </objects>
             <point key="canvasLocation" x="1510" y="478"/>
         </scene>
+        <!--Peek & Pop-->
+        <scene sceneID="9FG-jm-WVj">
+            <objects>
+                <viewController id="pvE-6Z-VXr" customClass="XPPeekPopViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="01T-Gl-MXV"/>
+                        <viewControllerLayoutGuide type="bottom" id="xgi-h1-xRS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="scF-MK-q7v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezr-fn-4oH">
+                                <rect key="frame" x="87.5" y="313.5" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.62745098040000002" green="0.050980392159999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="fYh-im-OsO"/>
+                                    <constraint firstAttribute="height" constant="40" id="vtF-1U-kz4"/>
+                                </constraints>
+                                <state key="normal" title="用力按我">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ezr-fn-4oH" firstAttribute="centerY" secondItem="scF-MK-q7v" secondAttribute="centerY" id="Uob-wG-AO9"/>
+                            <constraint firstItem="ezr-fn-4oH" firstAttribute="centerX" secondItem="scF-MK-q7v" secondAttribute="centerX" id="vIx-jZ-9Nj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Peek &amp; Pop" id="QpX-RO-gzU"/>
+                    <connections>
+                        <outlet property="peekPopButton" destination="ezr-fn-4oH" id="gUC-vq-Ek1"/>
+                        <segue destination="OEP-97-e5L" kind="show" id="tKf-US-bY6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kzq-D2-J53" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1540" y="1370"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="6Ye-JI-yYt">
+            <objects>
+                <viewController storyboardIdentifier="XPImageViewController" id="OEP-97-e5L" customClass="XPImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bLE-6c-c3K"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Dc-LH-cGc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hEs-2i-Muh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image3" translatesAutoresizingMaskIntoConstraints="NO" id="pKD-hp-6cE">
+                                <rect key="frame" x="10" y="74" width="355" height="534"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94150539339999995" green="0.1955695304" blue="0.24256798500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pKD-hp-6cE" firstAttribute="top" secondItem="bLE-6c-c3K" secondAttribute="bottom" constant="10" id="480-Jw-wCi"/>
+                            <constraint firstItem="6Dc-LH-cGc" firstAttribute="top" secondItem="pKD-hp-6cE" secondAttribute="bottom" constant="10" id="4hj-Ah-sem"/>
+                            <constraint firstItem="pKD-hp-6cE" firstAttribute="leading" secondItem="hEs-2i-Muh" secondAttribute="leading" constant="10" id="A0e-lZ-qQJ"/>
+                            <constraint firstAttribute="trailing" secondItem="pKD-hp-6cE" secondAttribute="trailing" constant="10" id="grr-bW-TY6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ksr-Tp-dVq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2420" y="1370"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="k2i-j2-vDv">
             <objects>
@@ -134,6 +203,7 @@
                     <connections>
                         <segue destination="yqI-0p-3rm" kind="relationship" relationship="viewControllers" id="dnm-Fl-RzM"/>
                         <segue destination="Ocy-YC-JoU" kind="relationship" relationship="viewControllers" id="FNC-QT-tyc"/>
+                        <segue destination="pAd-53-J5C" kind="relationship" relationship="viewControllers" id="8Sy-3n-EsK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHZ-d9-vyq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -254,9 +324,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ydm-wP-hhp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="601" y="1372"/>
+            <point key="canvasLocation" x="-658" y="1432"/>
+        </scene>
+        <!--Peek & Pop-->
+        <scene sceneID="lgi-h3-pml">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pAd-53-J5C" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Peek &amp; Pop" id="L89-7g-O1H"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PJH-yq-qN3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pvE-6Z-VXr" kind="relationship" relationship="rootViewController" id="i3g-hx-uOn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FqP-5r-7M9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="1370"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image3" width="577" height="1024"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="AF3-Td-ok5"/>
         <segue reference="crs-3j-kvU"/>

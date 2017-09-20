@@ -13,6 +13,8 @@
 		12434F721F70FB4A00E7BF75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12434F711F70FB4A00E7BF75 /* Assets.xcassets */; };
 		12434F751F70FB4A00E7BF75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12434F731F70FB4A00E7BF75 /* LaunchScreen.storyboard */; };
 		12434F7E1F70FF7200E7BF75 /* XPPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12434F7D1F70FF7200E7BF75 /* XPPresentViewController.m */; };
+		12434F811F711AFF00E7BF75 /* XPPeekPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12434F801F711AFF00E7BF75 /* XPPeekPopViewController.m */; };
+		12434F841F711B1700E7BF75 /* XPImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12434F831F711B1700E7BF75 /* XPImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		12434F761F70FB4A00E7BF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12434F7C1F70FF7200E7BF75 /* XPPresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPresentViewController.h; sourceTree = "<group>"; };
 		12434F7D1F70FF7200E7BF75 /* XPPresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPresentViewController.m; sourceTree = "<group>"; };
+		12434F7F1F711AFF00E7BF75 /* XPPeekPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPeekPopViewController.h; sourceTree = "<group>"; };
+		12434F801F711AFF00E7BF75 /* XPPeekPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPeekPopViewController.m; sourceTree = "<group>"; };
+		12434F821F711B1700E7BF75 /* XPImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPImageViewController.h; sourceTree = "<group>"; };
+		12434F831F711B1700E7BF75 /* XPImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				12434F691F70FB4A00E7BF75 /* AppDelegate.m */,
 				12434F7C1F70FF7200E7BF75 /* XPPresentViewController.h */,
 				12434F7D1F70FF7200E7BF75 /* XPPresentViewController.m */,
+				12434F7F1F711AFF00E7BF75 /* XPPeekPopViewController.h */,
+				12434F801F711AFF00E7BF75 /* XPPeekPopViewController.m */,
+				12434F821F711B1700E7BF75 /* XPImageViewController.h */,
+				12434F831F711B1700E7BF75 /* XPImageViewController.m */,
 				12434F6E1F70FB4A00E7BF75 /* Main.storyboard */,
 				12434F711F70FB4A00E7BF75 /* Assets.xcassets */,
 				12434F731F70FB4A00E7BF75 /* LaunchScreen.storyboard */,
@@ -151,8 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				12434F7E1F70FF7200E7BF75 /* XPPresentViewController.m in Sources */,
+				12434F841F711B1700E7BF75 /* XPImageViewController.m in Sources */,
 				12434F6A1F70FB4A00E7BF75 /* AppDelegate.m in Sources */,
 				12434F671F70FB4900E7BF75 /* main.m in Sources */,
+				12434F811F711AFF00E7BF75 /* XPPeekPopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
