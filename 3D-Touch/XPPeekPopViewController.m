@@ -37,6 +37,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    // 根据屏幕的按压力度来改变背景色
+    // `touch.force`为用户当前按压屏幕的力度值
+    UITouch *touch = [touches anyObject];
+    CGFloat red = (touch.maximumPossibleForce - touch.force) / touch.maximumPossibleForce;
+    UIColor *color = [UIColor colorWithRed:red green:1.0 blue:1.0 alpha:1.0];
+    self.view.backgroundColor = color;
+}
+
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    self.view.backgroundColor = [UIColor whiteColor];
+}
+
+
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    self.view.backgroundColor = [UIColor whiteColor];
+}
+
+
 #pragma mark - <UIViewControllerPreviewingDelegate>
 
 - (void)previewingContext:(id<UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit {
